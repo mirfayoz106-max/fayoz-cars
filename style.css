@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090b0f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #11151c;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292f38;
+}
+
+header h2 {
+    letter-spacing: 2px;
+}
+
+header span, h1 span {
+    color: #d5a84c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #d5a84c;
+}
+
+.hero {
+    min-height: 500px;
+    padding: 120px 8%;
+    background: linear-gradient(90deg, #090b0f, #202833);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.hero p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d5a84c;
+    color: black;
+    padding: 13px 22px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #f0c46d;
+}
+
+.features, .catalog, .contact {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.cards div, .car {
+    background: #151b23;
+    padding: 25px;
+    flex: 1;
+    border: 1px solid #292f38;
+}
+
+.cards p, .car p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.car img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.car h2, .car h3 {
+    margin-top: 15px;
+}
+
+.car h3 {
+    color: #d5a84c;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #151b23;
+    color: white;
+    border: 1px solid #333;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+footer {
+    background: #11151c;
+    padding: 25px;
+    text-align: center;
+    color: #888;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .cars, .cards {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
